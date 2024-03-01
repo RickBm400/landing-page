@@ -1,5 +1,6 @@
 import variables from "./sass/variables.module.sass";
 import { bebas } from "./utils/fonts";
+import CardComponent from "./components/Card.component";
 
 const name = "Hola mundo";
 
@@ -16,7 +17,7 @@ export default function Home() {
           color: variables.bgColor,
         }}
       >
-        {name}
+        <CardComponent />
       </div>
     </div>
   );

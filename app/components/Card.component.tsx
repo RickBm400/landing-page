@@ -1,3 +1,3 @@
 export default function CardComponent() {
-  return <>Hello</>;
+  return <>Holamundos</>;
 }
