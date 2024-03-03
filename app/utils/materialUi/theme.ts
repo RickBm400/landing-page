@@ -7,3 +7,30 @@ export const theme = createTheme({
         fontFamily: barlow.style.fontFamily,
     },
 });
+
+export const buttonTheme = createTheme({
+    components: {
+        MuiButton: {
+            styleOverrides: {
+                root: ({ theme }) =>
+                    theme.unstable_sx({
+                        fontFamily: bebas.style.fontFamily,
+                        backgroundColor: 'red',
+                    })
+            }
+        }
+    }
+})
+export const button2theme = createTheme({
+    components: {
+        MuiButton: {
+            styleOverrides: {
+                root: ({ theme }) =>
+                    theme.unstable_sx({
+                        fontFamily: bebas.style.fontFamily,
+                        backgroundColor: 'green',
+                    })
+            }
+        }
+    }
+})
