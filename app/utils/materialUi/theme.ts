@@ -1,6 +1,6 @@
 'use client'
 import { createTheme } from "@mui/material/styles";
-import { barlow, bebas } from "../fonts";
+import { barlow, bebas } from "utils/fonts";
 
 export const theme = createTheme({
     typography: {
@@ -21,6 +21,7 @@ export const buttonTheme = createTheme({
         }
     }
 })
+
 export const button2theme = createTheme({
     components: {
         MuiButton: {
