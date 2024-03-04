@@ -16,6 +16,9 @@ export const buttonTheme = createTheme({
                     theme.unstable_sx({
                         fontFamily: bebas.style.fontFamily,
                         backgroundColor: 'red',
+                        ":hover": {
+                            backgroundColor: '#fb4f66'
+                        }
                     })
             }
         }
