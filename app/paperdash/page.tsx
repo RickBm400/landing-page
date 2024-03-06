@@ -1,6 +1,6 @@
-"use client";
-import "./paperdash.sass";
-import Grid from "@mui/material/Unstable_Grid2";
+'use client';
+import './paperdash.sass';
+import Grid from '@mui/material/Unstable_Grid2';
 
 export default function PaperDash() {
   return (
@@ -13,7 +13,14 @@ export default function PaperDash() {
           spacing={0}
         >
           <Grid xs={6}>99px</Grid>
-          <Grid xs={6}>Mundo</Grid>
+          <Grid xs={6}>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </Grid>
         </Grid>
         <Grid xs={6} className={`b-left b-right b-bottom h-[60%]`}>
           ols

@@ -1,9 +1,9 @@
-"use client";
-import variables from "./sass/variables.module.sass";
-import CardComponent from "./components/Card.component";
-import { Button } from "@mui/material";
-import { buttonTheme, button2theme } from "./utils/materialUi/theme";
-import { ThemeProvider } from "@emotion/react";
+'use client';
+import variables from './sass/variables.module.sass';
+import CardComponent from './components/Card.component';
+import { Button } from '@mui/material';
+import { buttonTheme, button2theme } from './utils/materialUi/theme';
+import { ThemeProvider } from '@emotion/react';
 
 export default function Home() {
   return (
