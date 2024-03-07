@@ -1,39 +1,10 @@
 'use client';
+import { links, contacts } from './utils/scripts';
 import { Kode_mono } from '../utils/fonts';
 import './paperdash.sass';
 import Grid from '@mui/material/Unstable_Grid2';
 
 export default function PaperDash() {
-  interface contact {
-    phone_number: string;
-    email: string;
-    location: string;
-  }
-  const links = [
-    {
-      url: '',
-      name: 'About',
-    },
-    {
-      url: '',
-      name: 'Work',
-    },
-    {
-      url: '',
-      name: 'What i do',
-    },
-    {
-      url: '',
-      name: 'Contact me',
-    },
-  ];
-
-  const contacts: contact = {
-    phone_number: '99999999',
-    email: 'rjbm29@gmail.com',
-    location: 'B/quilla',
-  };
-
   return (
     <>
       <Grid
