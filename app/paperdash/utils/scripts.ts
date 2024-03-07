@@ -9,7 +9,7 @@ export const links: Array<{ url: string; name: string }> = [
     },
     {
         url: '',
-        name: 'What i do',
+        name: 'What I do',
     },
     {
         url: '',

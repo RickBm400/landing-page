@@ -23,13 +23,19 @@ export default function Intro() {
             aperiam hic.
           </div>
         </section>
-        <div style={{ maxHeight: '100px', paddingTop: '2rem' }}>
+        {/* <div
+          style={{
+            paddingTop: '2rem',
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
           <img
-            style={{ height: '300px' }}
+            style={{ objectFit: 'cover', height: '300px' }}
             src="https://st2.depositphotos.com/1793519/50734/i/450/depositphotos_507343692-stock-photo-render-abstract-pink-blue-neon.jpg"
             loading="lazy"
           />
-        </div>
+        </div> */}
       </div>
     </>
   );
