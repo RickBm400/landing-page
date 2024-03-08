@@ -1,10 +1,10 @@
 'use client';
 import { links, contacts } from './utils/scripts';
 import { Kode_mono } from '../utils/fonts';
-import './paperdash.sass';
 import Grid from '@mui/material/Unstable_Grid2';
 import Intro from './components/Intro';
 import ContentSection from './components/ContentSection';
+import './paperdash.sass';
 
 export default function PaperDash() {
   return (
@@ -18,7 +18,7 @@ export default function PaperDash() {
         <Grid
           container
           xs={12}
-          className={`b-top b-bottom h-[20%]`}
+          className={`border--top border--bottom h-[20%]`}
           spacing={0}
         >
           <Grid xs={6}>
@@ -28,34 +28,37 @@ export default function PaperDash() {
           <Grid xs={6} container spacing={0}>
             <Grid xs={5}>
               <ul className="p-4">
-                {links.map((link) => {
-                  return <li>{link.name}</li>;
+                {links.map((link, i: number) => {
+                  return <li key={i}>{link.name}</li>;
                 })}
               </ul>
             </Grid>
             <Grid xs={7}>
               <div className="contact_data p-4 flex flex-col justify-between">
-                {Object.keys(contacts).map((key: string) => {
+                {Object.keys(contacts).map((key: string, i: number) => {
                   return (
-                    <>
-                      <div className="flex justify-between">
-                        <span>{key.replace('_', ' ')}</span>
-                        <span>{contacts[key as keyof typeof contacts]}</span>
-                      </div>
-                    </>
+                    <div key={i} className="flex justify-between">
+                      <span>{key.replace('_', ' ')}</span>
+                      <span>{contacts[key as keyof typeof contacts]}</span>
+                    </div>
                   );
                 })}
               </div>
             </Grid>
           </Grid>
         </Grid>
-        <Grid xs={6} className={`b-right b-bottom h-[60%]`}>
+        <Grid xs={6} className={`border--right border--bottom h-[60%]`}>
           <Intro />
         </Grid>
-        <Grid xs={6} className={`b-bottom`}>
+        <Grid xs={6} className={`border--bottom`}>
           <ContentSection />
         </Grid>
-        <Grid xs={12} container spacing={0} className={`b-bottom h-[20%]`}>
+        <Grid
+          xs={12}
+          container
+          spacing={0}
+          className={`border--bottom h-[20%]`}
+        >
           <Grid xs={6} className={`flex h-[100%] items-end`}>
             <span>Impact beyond innovation</span>
           </Grid>
