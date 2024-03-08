@@ -4,6 +4,7 @@ import { Kode_mono } from '../utils/fonts';
 import './paperdash.sass';
 import Grid from '@mui/material/Unstable_Grid2';
 import Intro from './components/Intro';
+import ContentSection from './components/ContentSection';
 
 export default function PaperDash() {
   return (
@@ -51,32 +52,35 @@ export default function PaperDash() {
         <Grid xs={6} className={`b-right b-bottom h-[60%]`}>
           <Intro />
         </Grid>
-        <Grid xs={6} className={`b-bottom h-[60%]`}></Grid>
-        <Grid
-          xs={12}
-          className={`b-bottom h-[20%] flex justify-between items-end`}
-        >
-          <div>alala</div>
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'end',
-              containerType: 'inline-size',
-              width: '100%',
-              height: '100%',
-            }}
-          >
-            <span
-              className="p-0 m-0"
+        <Grid xs={6} className={`b-bottom`}>
+          <ContentSection />
+        </Grid>
+        <Grid xs={12} container spacing={0} className={`b-bottom h-[20%]`}>
+          <Grid xs={6} className={`flex h-[100%] items-end`}>
+            <span>Impact beyond innovation</span>
+          </Grid>
+          <Grid xs={6} className="h-[100%]">
+            <div
               style={{
-                fontSize: '13rem',
                 display: 'flex',
-                alignItems: 'center',
+                justifyContent: 'end',
+                containerType: 'inline-size',
+                width: '100%',
+                height: '100%',
               }}
             >
-              4AM
-            </span>
-          </div>
+              <span
+                className="p-0 m-0"
+                style={{
+                  fontSize: '12rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                }}
+              >
+                4AM
+              </span>
+            </div>
+          </Grid>
         </Grid>
       </Grid>
     </>

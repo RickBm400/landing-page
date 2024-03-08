@@ -7,7 +7,7 @@ export default function Intro() {
       >
         <section className="flex flex-col">
           <span className="font-bold">B/QUILLA, COLOMBIA 2024.</span>
-          <span className="text-[4rem] leading-[4.3rem] mt-[1rem] mb-[1rem]">
+          <span className="text-[4rem] leading-[4.3rem] font-[700]  mt-[1rem] mb-[1rem]">
             Let's take programming to next level.
           </span>
           <div className="text-[17px] mb-3">
