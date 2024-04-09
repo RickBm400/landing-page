@@ -19,10 +19,7 @@ export default function RootLayout({
         <AppRouterCacheProvider>
           <ThemeProvider theme={theme}>
             <main>
-              <ReactLenis
-                root
-                options={{ lerp: 0.1, duration: 1.5, smoothWheel: true }}
-              >
+              <ReactLenis root options={{ lerp: 0.1, duration: 1.5 }}>
                 {children}
               </ReactLenis>
             </main>

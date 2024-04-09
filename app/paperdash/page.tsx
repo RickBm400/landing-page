@@ -5,6 +5,8 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Intro from './components/Intro';
 import ContentSection from './components/ContentSection';
 import './paperdash.sass';
+import Image from 'next/image';
+import AM from './utils/img/4AM.svg';
 
 export default function PaperDash() {
   return (
@@ -62,27 +64,12 @@ export default function PaperDash() {
           <Grid xs={6} className={`flex h-[100%] items-end`}>
             <span>Impact beyond innovation</span>
           </Grid>
-          <Grid xs={6} className="h-[100%]">
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'end',
-                containerType: 'inline-size',
-                width: '100%',
-                height: '100%',
-              }}
-            >
-              <span
-                className="p-0 m-0"
-                style={{
-                  fontSize: '12rem',
-                  display: 'flex',
-                  alignItems: 'center',
-                }}
-              >
-                4AM
-              </span>
-            </div>
+          <Grid xs={6} className="h-[100%] flex items-center justify-end">
+            <Image
+              src={AM}
+              style={{ width: 'auto', height: 150 }}
+              alt="4AM Logo"
+            ></Image>
           </Grid>
         </Grid>
       </Grid>

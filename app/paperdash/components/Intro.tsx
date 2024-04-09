@@ -1,10 +1,7 @@
 export default function Intro() {
   return (
     <>
-      <div
-        id="intro_container"
-        className="py-[2rem] px-[1rem] overflow-y-auto h-full"
-      >
+      <div id="intro_container" className="py-[2rem] px-[1rem] h-full">
         <section className="flex flex-col">
           <span className="font-bold">B/QUILLA, COLOMBIA 2024.</span>
           <span className="text-[4rem] leading-[4.3rem] font-[700]  mt-[1rem] mb-[1rem]">
